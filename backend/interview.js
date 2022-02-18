@@ -15,8 +15,7 @@ const maxProfits = (prices) => {
   let bestProfit = 0;
 
   for (let i = 0; i < prices.length - 1; i++) {
-    const price = prices[i];
-    const current = price;
+    const current = prices[i];
     const next = prices[i + 1];
     const difference = next - current;
     profits.push(difference);
